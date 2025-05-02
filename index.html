@@ -13,17 +13,17 @@
                 <p>Real Time Character Counter</p>
             </div>
             <div class="Text">
-                <textarea name="text" id="text" placeholder="Text ..." rows="4"></textarea>
+                <textarea name="text" id="text" placeholder="Text ..." maxlength=""></textarea>
             </div>
             <div class="Down">
-                <div class="Current"><p>Remain: 94</p></div>
+                <div class="Current"><p>Remain: </p> <span></span></div>
                 <div class="Min">
                     <label for="min">Min:</label>
-                    <input id="min" type="text" inputmode="numeric" maxlength="4">
+                    <input id="min" type="text" inputmode="numeric" maxlength="4" value="50" placeholder="50"> 
                 </div>
                 <div class="Max">
                     <label for="max">Max:</label>
-                    <input id="max" type="text" inputmode="numeric" maxlength="4">
+                    <input id="max" type="text" inputmode="numeric" maxlength="4" value="1000" placeholder="1000">
                 </div>
                 <div class="btn">
                     <button>Start</button>

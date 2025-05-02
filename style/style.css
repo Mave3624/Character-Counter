@@ -112,3 +112,18 @@ button {
     text-decoration: underline;
     text-decoration-color: rgb(131, 131, 131);
 }
+
+.Current {
+    display: grid;
+    grid-template: 100% / max-content 1fr ;
+}
+
+.Current > P {
+    padding: 1px 5px;
+    font-size: 15px;
+}
+
+span {
+    font-size: 15px;
+    padding: 1px 0;
+}
