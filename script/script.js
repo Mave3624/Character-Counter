@@ -44,7 +44,7 @@ const Down = (
                 Document.Maxmuim.value = ''
                 Document.Remain.textContent = Document.savemax
                 Document.Text.focus()
-                Document.Text.style.boxShadow = 'inset 1px 1px 20px 0px rgb(255, 50, 228)'
+                Document.Text.style.boxShadow = 'inset 0px 4px 8px rgba(50, 50, 50, 0.2)'
                 Document.Text.setAttribute("maxlength", Document.savemax)
             }
         })
@@ -58,16 +58,16 @@ const Text = (
             Document.Remain.textContent = Document.savemax - TextLength
 
             if (Document.Text.focus && TextLength < Document.savemin ) {
-                 Document.Text.style.boxShadow = 'inset 1px 1px 10px 0px rgb(255, 50, 50)'
+                Document.Text.style.boxShadow = 'inset 0px 0px 4px rgb(255, 0, 0)'
             }
             else if (Document.Text.focus && TextLength >= Document.savemin ) {
-                Document.Text.style.boxShadow = 'inset 1px 1px 10px 0px rgb(67, 255, 50)'
+                Document.Text.style.boxShadow = 'inset 0px 0px 4px rgb(0, 255, 50)'
             }
             if (Document.Text.focus && TextLength === Number(Document.Text.getAttribute('maxlength'))) {
-                Document.Text.style.boxShadow = 'inset 1px 1px 10px 0px rgb(255, 50, 228)'
+                Document.Text.style.boxShadow = 'inset 0px 4px 8px rgba(50, 50, 50, 0.2)'
             }
             if (Document.Text.focus && TextLength === 0) {
-                Document.Text.style.boxShadow = 'inset 1px 1px 20px 0px rgb(255, 50, 228)'
+                Document.Text.style.boxShadow = 'inset 0px 4px 8px rgba(50, 50, 50, 0.2)'
             }
         })
     }

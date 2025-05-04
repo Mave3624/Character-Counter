@@ -1,10 +1,11 @@
 :root {
     --size : clamp(300px, calc(300px + 15vw), 500px);
-    --title-font-size: clamp(0.8rem, calc(1rem + 25%), 1.5rem)
+    --title-font-size: clamp(0.8rem, calc(1rem + 25%), 1.5rem);
+    --textarea-input-sizs: clamp(10px, 0.8rem, 15px)
 }
 @font-face {
     font-family: jose;
-    src: url(/font/JosefinSans-VariableFont_wght.ttf) format(ttf);
+    src: url(/font/AnonymousPro-Regular.ttf) format(ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -16,7 +17,7 @@
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: gray;
 }
 
 .Outer-main {
@@ -35,8 +36,8 @@ body {
     padding: 5px;
     grid-template: 40px 1fr 30px / 100%;
     border-radius: 10px;
-    background-color: rgb(131, 13, 102);
-    box-shadow: 2px 2px 20px 2px gray;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 2px 2px 20px 2px rgba(186, 226, 236, 0.3);
 }
 
 .Title {
@@ -46,8 +47,8 @@ body {
     align-content: center;
     margin-top: 10px;
     font-weight: 600;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 3px 5px rgb(213, 33, 168);
+    color: gray;
+    text-shadow: 2px 3px 5px rgb(178, 204, 210);
 }
 
 .Text {
@@ -60,14 +61,14 @@ textarea {
     outline: none;
     line-height: 15px;
     line-break: anywhere;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     padding: 5px 2px 2px 2px ;
     font-family: jose;
-    font-size: 0.8rem;
+    font-size: var(--textarea-input-sizs);
     border-radius: 5px;
-    background-color: rgba(102, 9, 79, 0.987);
-    box-shadow: inset 1px 1px 20px 0px rgb(255, 50, 228);
-    color: rgb(255, 255, 255);
+    background-color: rgb(186, 226, 236);
+    box-shadow: inset 0px 4px 8px rgba(50, 50, 50, 0.2);
+    color: rgb(50, 50, 50);
     caret-color: rgb(255, 255, 255);
 }
 .Down {
@@ -101,7 +102,7 @@ input {
 button {
     width: 50px;
     height: 20px;
-    background-color: gray;
+    background-color: rgb(0, 200, 150);
     border-radius: 5px;
     font-family: monospace;
 }
